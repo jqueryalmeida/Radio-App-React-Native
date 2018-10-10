@@ -1,0 +1,30 @@
+ {this.state.isPlaying === true ? <Text>Funcionou</Text>: null}
+
+     onPressPlay = ()=>{
+      this.setState({isPlaying : true});
+        if({isPlaying:true}){
+          this.setState({isPlaying:false});
+          sound.play();
+        }
+    }
+    onPressPause = ()=>{
+      this.setState({isPlaying : false});
+        if({isPlaying:false}){
+          this.setState({isPlaying:false});
+          sound.pause();
+        }
+    }
+
+  <Button style = {styles.botao}
+          onPress={() =>test()}
+          title={this.state.Play}
+          />
+
+      <Button style={styles.botao}
+          onPress={() => sound.pause() }
+          title={this.state.Pause}
+          />
+
+          <Text>{this.state.info.map(informacoes =>{
+        return <Text key={info._id} style={{color:"#ffffff"}}>{informacoes.programaFM}</Text>
+      })}</Text>
