@@ -1,18 +1,15 @@
 import React, { Component } from 'react';
 import { StyleSheet,Text,View,TouchableHighlight} from 'react-native';
 import Image from 'react-native-remote-svg';
-
-
-export default class App extends Component{
-
+export default class Header extends Component{
   render() {
     return (
     <View style={styles.header}>
     <TouchableHighlight onPress={()=> this.props.navigation.openDrawer()}>
-        <View style={styles.teste}>
+        <View style={styles.menu}>
             <Image style={styles.icon1} source={{uri: 'https://leblon.000webhostapp.com/rn/ios-menu.svg'}}></Image>
         </View>
-    </TouchableHighlight> 
+    </TouchableHighlight>
             <Text style={styles.title}>Radio Inconfidencia</Text>
             <Image style={styles.icon2} source={{uri: 'https://leblon.000webhostapp.com/rn/mdmore.svg'}}></Image>
     </View>
@@ -26,11 +23,12 @@ const styles = StyleSheet.create({
       alignItems:'center',
       justifyContent: 'center',
       justifyContent: 'space-between',
-      flexDirection:'row'
+      flexDirection:'row',
+      backgroundColor:'#0b0b0b'
   },
   title:{
-    color:"#1d1d1d",
-    fontSize:16,
+    color:"#ffffff",
+    fontSize:12,
   },
   icon1:{
       width:24,
@@ -41,7 +39,7 @@ const styles = StyleSheet.create({
     height:24,
     marginRight:8,
 },
-teste:{
+menu:{
     marginLeft:15,
 }
 });

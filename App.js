@@ -1,22 +1,33 @@
 import React, { Component } from 'react';
-import {StyleSheet,Text,View,NetInfo} from 'react-native';
-import {createDrawerNavigator} from 'react-navigation';
-
-import HomeScreen from'./src/components/HomeScreen';
-import SettingsScreen from'./src/components/SettingsScreen';
-
-
+import {StyleSheet,View,StatusBar} from 'react-native';
+import Header from './src/components/Header';
+import Cover from'./src/components/Cover';
+import Seekbar from './src/components/Seekbar';
+import Player from './src/components/Player';
+import Footer from './src/components/Footer';
 export default class App extends Component{
-    render() {
-      return (
-          <AppDrawerNavigator/>
-      );
-    }
-  }
-  
-const AppDrawerNavigator = createDrawerNavigator({
-  Home: HomeScreen,
-  Settings: SettingsScreen,
-})
+render(){
+    return(
+<View style={styles.container}>
+      <StatusBar
+        backgroundColor="#131313"
+        barStyle="light-content"
+      />
+      <Header/>
+      <Cover/>
+      <Seekbar/>
+      <Player/>
+      <Footer/>
+  </View>
+    );
+}
+}
+const styles = StyleSheet.create({
+container: {
 
-  
+  backgroundColor: '#000000',
+  flex:12,
+},
+
+
+});
