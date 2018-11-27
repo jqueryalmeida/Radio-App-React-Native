@@ -5,10 +5,10 @@ export default class Footer extends Component{
   render() {
     return (
     <View style={styles.header}>
-    <View style={styles.footer}>
+    {/* <View style={styles.footer}>
       <Image style={styles.iconRadio} source={{uri: 'https://leblon.000webhostapp.com/rn/iosradio.svg'}}></Image>
       <Text style={ styles.textoFooter}>Ouça a Inconfidencia AM</Text>
-    </View>
+    </View> */}
     </View>
     );
   }

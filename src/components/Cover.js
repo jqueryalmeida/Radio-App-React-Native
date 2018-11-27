@@ -21,13 +21,12 @@ export default class Cover extends Component{
 
   render() {
     return (
-
     <View style={styles.topo}>
     <View style={styles.ImageArea}>
-        <Image style ={styles.imgPrograma} source={this.state.img}/>
+        {/* <Image style ={styles.imgPrograma} source={this.state.img}/> */}
     </View>
     <View style ={styles.ajusteInfoRadio}>
-       <Text style ={styles.programa}>{this.state.request.map((item)=>{return <Text key={item._id}>{item.ProgramaFM}</Text>})}</Text>
+       <Text style ={styles.programa}>{this.state.request.map((item)=>{return <Text style ={styles.programa} key={item._id}>{item.ProgramaFM}</Text>})}</Text>
        <Text style = {styles.apresentador}>{this.state.request.map((item)=>{return <Text key={item._id}>{item.ApresentadorFM}</Text>})}</Text>
        <Text style = {styles.horario}>{this.state.request.map((item)=>{return <Text key={item._id}>{item.HoraFM}</Text>})}</Text>
     </View>
@@ -61,7 +60,7 @@ const styles = StyleSheet.create({
         borderRadius:150
       },
       programa:{
-        fontSize:22,
+        fontSize:18,
         fontWeight:'bold',
         color: "#ffffff"
       },

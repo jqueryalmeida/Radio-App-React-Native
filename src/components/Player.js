@@ -3,6 +3,7 @@ import {StyleSheet,Text,View,ToastAndroid,TouchableHighlight} from 'react-native
 import Sound from 'react-native-sound';
 import Image from 'react-native-remote-svg';
 import * as Progress from 'react-native-progress';
+
 export default class Player extends Component{
     constructor(props){
         super(props);
@@ -59,13 +60,13 @@ export default class Player extends Component{
         <View style={styles.imgButton}>
           <TouchableHighlight underlayColor="#000000">
             <View style={styles.skip1}>
-              <Image style={styles.rewind} source={{uri: 'https://leblon.000webhostapp.com/rn/ios-more.svg'}}></Image>
+              <Image style={styles.rewind} source={{uri: 'http://doi2.online/Assets/rec.svg'}}></Image>
             </View>
            </TouchableHighlight>
 
            <TouchableHighlight underlayColor="#000000">
             <View style={styles.skip1}>
-              <Image style={styles.rewind} source={{uri: 'https://leblon.000webhostapp.com/rn/ios-rewind.svg'}}></Image>
+              <Image style={styles.rewind} source={{uri: 'http://doi2.online/Assets/prev.svg'}}></Image>
             </View>
            </TouchableHighlight>
 
@@ -75,13 +76,13 @@ export default class Player extends Component{
 
            <TouchableHighlight underlayColor="#000000">
             <View style={styles.skip2}>
-              <Image style={styles.rewind} source={{uri: 'https://leblon.000webhostapp.com/rn/ios-fastforward.svg'}}></Image>
+              <Image style={styles.rewind} source={{uri: 'http://doi2.online/Assets/next-a.svg'}}></Image>
             </View>
            </TouchableHighlight>
 
            <TouchableHighlight onPress={() => this._onPressStop()} underlayColor="white">
            <View style={styles.skip2}>
-            <Image style={styles.rewind} source={{uri: 'https://leblon.000webhostapp.com/rn/ios-square.svg'}}></Image>
+            <Image style={styles.rewind} source={{uri: 'http://doi2.online/Assets/reload.svg'}}></Image>
            </View>
            </TouchableHighlight>
           </View>
@@ -150,7 +151,7 @@ const styles = StyleSheet.create({
       skip1:{
       width:40,
       height:40,
-      backgroundColor: '#444',
+      // backgroundColor: '#111',
       borderRadius:40,
       marginRight:10,
       justifyContent: 'center',
@@ -159,7 +160,7 @@ const styles = StyleSheet.create({
       skip2:{
       width:40,
       height:40,
-      backgroundColor: '#444',
+      // backgroundColor: '#111',
       borderRadius:40,
       marginLeft:10,
       justifyContent: 'center',
@@ -169,7 +170,7 @@ const styles = StyleSheet.create({
       width:40,
       height:40,
       marginLeft:10,
-      backgroundColor: '#444',
+      // backgroundColor: '#111',
       borderRadius:40,
       },
       load:{
@@ -178,7 +179,7 @@ const styles = StyleSheet.create({
       left:102,
       },
       rewind:{
-      width:20,
-      height:20,
+      width:14,
+      height:14,
       }
 });

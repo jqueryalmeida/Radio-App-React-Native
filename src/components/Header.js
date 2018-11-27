@@ -24,7 +24,6 @@ const styles = StyleSheet.create({
       justifyContent: 'center',
       justifyContent: 'space-between',
       flexDirection:'row',
-      backgroundColor:'#0b0b0b'
   },
   title:{
     color:"#ffffff",

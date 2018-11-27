@@ -4,8 +4,8 @@ import android.app.Application;
 
 import com.facebook.react.ReactApplication;
 import com.ninty.system.setting.SystemSettingPackage;
-
 import com.zmxv.RNSound.RNSoundPackage;
+
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;

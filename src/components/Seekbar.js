@@ -21,7 +21,7 @@ export default class Seekbar extends Component{
             value = {0.3}
             minimumValue = { 0.0 }
             maximumValue = { 1.0 }
-            minimumTrackTintColor = "#fd082b"
+            minimumTrackTintColor = "#ff2121"
             maximumTrackTintColor = "#777777"
             thumbTintColor = "#e8e8e8"
             onValueChange={(ChangedValue) => this.setState({ SliderValue: ChangedValue })}

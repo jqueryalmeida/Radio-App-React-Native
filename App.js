@@ -10,7 +10,7 @@ render(){
     return(
 <View style={styles.container}>
       <StatusBar
-        backgroundColor="#131313"
+        backgroundColor="#000000"
         barStyle="light-content"
       />
       <Header/>
